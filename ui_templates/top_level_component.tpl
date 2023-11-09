@@ -15,17 +15,16 @@
                   <h1 class="card-title text-center mb-4">What type of an investor are you, {{name}}?</h1>
                  
                      <div class="form-group">
-                        <select name="investor_type" class="form-select form-select-lg mb-3">
+                        <select id="investor-type" name="investor_type" class="form-select form-select-lg mb-3">
                            <option selected>Please select one</option> 
                            % for type in investor_types:
                               <option>{{type}}</option>
                            % end
                         </select> 
                      </div>
+
                      <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                     <div class="result">{{result}}</div>
-                    %
-             
+                     <div class="result">{{result}}</div>          
          </div>
       </div>
    </div>
