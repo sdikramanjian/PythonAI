@@ -16,8 +16,8 @@ def index():
 @route('/',method='POST')
 def submit_form():
     investor_type=request.forms.get('investor_type')
-    data = stock_advisor.recommend_stocks(investor_type)
-    return template('top_level_component.tpl', title='Welcome', name=my_name, investor_types=investor_types, result=f"Here are some stocks we want to recomment to you {my_name} since you are a {investor_type} investor:")
+    recommended_stocks = stock_advisor.recommend_stocks(investor_type)
+    return template('top_level_component.tpl', title='Welcome', name=my_name, investor_types=investor_types, result=f"Here are some stocks we want to recomment to you {my_name} since you are a {investor_type} investor: {recommended_stocks}")
 
 if __name__ =='__main__':
     run(host='localhost',port=8080,debug=True)
