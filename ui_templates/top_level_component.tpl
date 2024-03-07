@@ -24,7 +24,14 @@
                      </div>
 
                      <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                     <div class="result">{{result}}</div>          
+                     <div class="result">      
+                        <strong>{{result}}</strong><br><br>  
+                     </div>
+                     <div class="result">
+                        % for stock in recommendation:
+                           {{stock}}<br>  <!-- Insert a new line after each entry -->
+                        % end
+                     </div>         
          </div>
       </div>
    </div>
