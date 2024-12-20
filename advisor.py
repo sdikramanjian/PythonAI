@@ -4,8 +4,8 @@ from pandas_datareader import data as pdr
 
 
 class Advisor:
-    def __init__(self):
-        yf.pdr_override()
+    #def __init__(self): 
+        #yf.pdr_override()
 
     def recommend_stocks(self,investor_type):
         stocks_list= self.get_list_of_tickers()[:100] # get the top 1000 stocks (for performance reasons)

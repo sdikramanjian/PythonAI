@@ -37,5 +37,10 @@
    </div>
 </form>
 
+
+<div> <!-- Include the Agent Template where we test the Langchain code -->
+  %include("agent_component.tpl") 
+</div>
+
 </body>
 </html>
