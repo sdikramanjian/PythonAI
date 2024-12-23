@@ -1,4 +1,4 @@
-import yfinance as yf
+#import yfinance as yf
 import pandas as pd
 from pandas_datareader import data as pdr
 
